@@ -23,8 +23,64 @@
  * ========================================================================
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
+
  */
-.bootstrap-switch {
+
+@media (max-width: 767px) {
+
+.navbar-nav  {
+   display: inline;
+}
+.navbar-default .navbar-brand {
+  display: inline;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+  color: red;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-top: 2px;   
+}
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+   color: #333;
+ }
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+   background-color: #ccc;
+ }
+
+ .navbar-nav .open .dropdown-menu {
+   border-bottom: 1px solid white; 
+   border-radius: 0;
+ }
+.dropdown-menu {
+    padding-left: 10px;
+}
+.dropdown-menu .dropdown-menu {
+    padding-left: 20px;
+ }
+ .dropdown-menu .dropdown-menu .dropdown-menu {
+    padding-left: 30px;
+ }
+ li.dropdown.open {
+  border: 0px solid red;
+ }
+
+}
+
+@media (min-width: 768px) {
+ul.nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+#navbar {
+  text-align: center;
+}
+}  
+
+
+ .bootstrap-switch {
   display: inline-block;
   direction: ltr;
   cursor: pointer;
