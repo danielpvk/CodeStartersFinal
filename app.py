@@ -11,7 +11,7 @@ app = Flask(__name__)
 #************************
 # ***********************DATABASE LOCAL
 #************************
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:007007Jr@localhost:3306/cartera_vigente"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://b6857a41f94299:e5e7015c@us-cdbr-iron-east-02.cleardb.net/heroku_f2c3a02bdbdbd96"
 
 #************************
 # ***********************DATABASE HEROKU
@@ -24,7 +24,7 @@ db = SQLAlchemy(app)
 # Create our database model
 
 class cartera_vigente(db.Model):
-    __tablename__ = 'cartera_vigente'
+    __tablename__ = 'heroku_f2c3a02bdbdbd96'
 
     Index = db.Column(db.Integer, primary_key=True)
     Estado = db.Column(db.String)
@@ -37,7 +37,7 @@ class cartera_vigente(db.Model):
 
 
     def __repr__(self):
-        return '<cartera_vigente %r>' % (self.name)
+        return '<heroku_f2c3a02bdbdbd96 %r>' % (self.name)
 
 
 
