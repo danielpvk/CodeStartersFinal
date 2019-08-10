@@ -42,6 +42,10 @@ function getData_estados(estado){
   console.log("selector de estados");
 }
 
+function getData(estado){
+  console.log("selector de estados");
+}
+
 
 function prepareEstado(estado){
     switch(estado){

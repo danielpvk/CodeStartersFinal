@@ -13,7 +13,7 @@ app = Flask(__name__)
 #************************
 # ***********************DATABASE LOCAL
 #************************
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@localhost:3306/cartera_vigente"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:007007Jr@localhost:3306/cartera_vigente"
 
 #************************
 # ***********************DATABASE HEROKU

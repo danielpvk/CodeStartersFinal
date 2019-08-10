@@ -149,9 +149,10 @@
                         <div class="container">
                             <div class="content-center">
                                 <div class="cc-profile-image">
-                                    <a href="#"><img src="static/images/squaremile.jpg" alt="Image"/></a>
+                                    <a href="#"><img src="static/images/Mexico.jpg" alt="Image"/></a>
                                 </div>
                                 <div class="h2 title">Evolución de cartera</div>
+                                <br>
                                 <p class="category text-white">Calculadora a través del uso de machine learning
                                     para determinar la tendencia en la evolución de la cartera
                                 </p>
@@ -162,17 +163,17 @@
                                 <div class="button-container"></a>
                                 <a
                                     class="btn btn-default btn-round btn-lg btn-icon"
-                                    href="https://www.linkedin.com/in/danielpvk/"
+                                    href="https://portafolioinfo.cnbv.gob.mx/Paginas/Reporte.aspx?s=40&t=2&st=3&ti=0&sti=0&n=0&tp=0"
                                     rel="tooltip"
-                                    title="Follow me on LinkedIn">
-                                    <i class="fa fa-linkedin"></i>
+                                    title="Consulta la Comision Nacional Bancaria y de Valores">
+                                    <i class="fa fa-bank"></i>
                                 </a>
                                 <a
                                     class="btn btn-default btn-round btn-lg btn-icon"
-                                    href="https://www.instagram.com/danielpvk/"
+                                    href="https://www.inegi.org.mx/sistemas/bie/"
                                     rel="tooltip"
-                                    title="Follow me on Instagram">
-                                    <i class="fa fa-instagram"></i>
+                                    title="Consulta INEGI">
+                                    <i class="fa  fa-address-card-o"></i>
                                 </a>
                             </div>
                         </div>
@@ -180,6 +181,7 @@
                 </div>
             </div>
         </div>
+       
         <!-- GRAFICO  ANIMADO-->
         <div class="section" id="graficoanimado">
             <div class="container" >
@@ -200,12 +202,12 @@
                                             aria-valuenow="60"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
-                                            style="width: 10%;"></div>
-                                        <span class="progress-value" id="carteratotalanimadatexto">10%</span>
+                                            style="width: 0%;"></div>
+                                        <span class="progress-value" id="carteratotalanimadatexto">0</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <!-- <div class="col-md-6">
                                 <div class="progress-container progress-primary">
                                     <span class="progress-badge">IMOR</span>
                                     <div class="progress">
@@ -222,12 +224,12 @@
                                         <span class="progress-value" id="imoranimadotexto" >80%</span>
                                     </div>
                                 </div> 
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="progress-container progress-primary">
-                                    <span class="progress-badge">CARTERA VIGENTE</span>
+                                    <span class="progress-badge">Probabilidad de Pago</span>
                                     <div class="progress">
                                         <div id="carteravigenteanimada"
                                             class="progress-bar progress-bar-primary"
@@ -238,8 +240,8 @@
                                             aria-valuenow="60"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
-                                            style="width: 60%;"></div>
-                                        <span class="progress-value" id="carteravigenteanimadatexto">60%</span>
+                                            style="width: 0%;"></div>
+                                        <span class="progress-value" id="carteravigenteanimadatexto">0%</span>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +267,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="progress-container progress-primary">
-                                    <span class="progress-badge">CARTERA VENCIA</span>
+                                    <span class="progress-badge">Probabilidad de Impago</span>
                                     <div class="progress">
                                         <div id="carteravencidaanimada"
                                             class="progress-bar progress-bar-primary"
@@ -276,8 +278,8 @@
                                             aria-valuenow="60"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
-                                            style="width: 75%;"></div>
-                                        <span class="progress-value" id="carteravencidaanimadatexto" >75%</span>
+                                            style="width: 0%;"></div>
+                                        <span class="progress-value" id="carteravencidaanimadatexto" >0%</span>
                                     </div>
                                 </div>
                             </div>
@@ -366,14 +368,35 @@
                                         class="cc-porfolio-image img-raised"
                                         data-aos="fade-up"
                                         data-aos-anchor-placement="top-bottom">
-                                        <a href="">  ESPACIO EXPLICATIVO CARTERA TOTAL
-                                            <figure class="cc-effect"><img src="static/images/CARTERA.JPG" alt="Image"/>
+                                        <a href="">
+                                             <figure class="cc-effect"> <!--<img src="static/images/CARTERA.JPG" alt="Image"/> -->
+                                                <div class="h5" >CARTERA VIGENTE</div>
+                                                <p>La cartera total estimada del estado de</p>
+                                                <p></p>
+                                                <div class="h5" id="carteranumerototal_pred"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="h5" id="carteranumerototal_pred_pago"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <div class="h5" id="carteranumerototal_pred_impago"></div>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
+                                                <p></p>
                                                 <figcaption>
-                                                    <div class="h4">CARTERA TOTAL</div>
-                                                    <p>La cartera total del estado de</p>
-                                                    <p>_____, del sector ______</p>
+                                                    <div class="h4" >CARTERA VIGENTE</div>
+                                                    <p>La cartera total estimada del estado de</p>
+                                                    <p id="carteratextototal">_____, del sector ______</p>
                                                     <p> en 2019 </p>
-                                                    <p>asciende a ______</p>
+                                                    <p id="carteranumerototal_pred_text">asciende a ______</p>
                                                     <p></p>
                                                 </figcaption>
                                             </figure>
@@ -406,8 +429,12 @@
                                         <a href="#Photography">
                                             <figure class="cc-effect"><img src="static/images/VIGENTE.jpg" alt="Image"/>
                                                 <figcaption>
-                                                    <div class="h4">ESPACIO CARTERA VIGENTE</div>
-                                                    <p>ESPACIO PARA EXPLICAR LA CARTERA VIGENTE</p>
+                                                    <div class="h4">CARTERA VIGENTE</div>
+                                                    <p>La cartera vigente estimada del estado de</p>
+                                                    <p id="carteratextovigente">_____, del sector ______</p>
+                                                    <p> en 2019 </p>
+                                                    <p id="carteranumerovigente">asciende a ______</p>
+                                                    <p></p>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -439,8 +466,12 @@
                                                 <a href="#Vencida">
                                                     <figure class="cc-effect"><img src="static/images/VENCIDA.jpg" alt="Image"/>
                                                         <figcaption>
-                                                            <div class="h4">ESPACIO CARTERA vencida</div>
-                                                            <p class="h5">ESPACIO PARA EXPLICAR LA CARTERA VENCIDA</p>
+                                                            <div class="h4">CARTERA VENCIDA</div>
+                                                            <p>La cartera vencida estimada del estado de</p>
+                                                            <p id="carteratextvencida">_____, del sector ______</p>
+                                                            <p> en 2019 </p>
+                                                            <p id="carteranumerovencida">asciende a ______</p>
+                                                            <p></p>>
                                                         </figcaption>
                                                     </figure>
                                                 </a>
@@ -455,18 +486,75 @@
         </div>
 
     </div>
-
+    <div class="section" id="experience">
+            <div class="container cc-experience">
+                <div class="h4 text-center mb-4 title">Metodología</div>
+                <div class="card">
+                    <div class="row">
+                        <div
+                            class="col-md-3 bg-primary"
+                            data-aos="fade-right"
+                            data-aos-offset="50"
+                            data-aos-duration="500">
+                            <div class="card-body cc-experience-header">
+                                <p>Machine Learning</p>
+                                <div class="h5">Clustering</div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-9"
+                            data-aos="fade-left"
+                            data-aos-offset="50"
+                            data-aos-duration="500">
+                            <div class="card-body" id="backgroundcluster">
+                                <div class="h5">Base de datos CNBV</div>
+                                <p>Se utilizaron los datos de CNBV y a traves la metodologia K-nearest neighbors</p>
+                                <p>se determinaron los principales clusters comperciales.</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row">
+                        <div
+                            class="col-md-3 bg-primary"
+                            data-aos="fade-right"
+                            data-aos-offset="50"
+                            data-aos-duration="500">
+                            <div class="card-body cc-experience-header">
+                                <p>Machine Learning</p>
+                                <div class="h5">Regresión Linear Múltiple</div>
+                                
+                            </div>
+                        </div>
+                        <div
+                            class="col-md-9"
+                            data-aos="fade-left"
+                            data-aos-offset="50"
+                            data-aos-duration="500">
+                            <div class="card-body" id="backgroundregresion">
+                                <div class="h5">Base de Datos INPC, INPP,TIIE,IFB</div>
+                                <p>Utilizando los clusters construidos, se realizo una regresion Linear Multiple.</p>
+                                <p>Esto nos permitió encontrar los factores mas determinantes que afectan las carteras.</p>
+                                <p>Con esto, podemos predecir el comportamiento de prestamos para el siguiente periodo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 </div>
 <footer class="footer">
-    <div class="container text-center">
+    <!-- <div class="container text-center">
         <a
             class="cc-linkedin btn btn-link "
             href="https://www.linkedin.com/in/danielpvk/">
             <i class="fa fa-linkedin fa-2x " aria-hidden="true"></i>
         </a>
-     </div>
+     </div> -->
     <div class="h4 title text-center">CODESTARTERS</div>
 
 </footer>
@@ -478,6 +566,7 @@
 <script src="static/js/main.js"></script>
 <script src="static/js/cartera_data.js"></script>
 <script src="static/js/cartera_data_predicted.js"></script>
+<script src="static/js/Forecast.js"></script>
 
 <script src="static/js/plots.js"></script>
 </body>

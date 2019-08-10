@@ -7230,6 +7230,15 @@ Created using IcoMoon - icomoon.io
   color: #fff;
   text-transform: uppercase;
 }
+/* experience Style */
+.cc-experience #backgroundcluster  {
+  background-image: url(neo4j-3-0-graph-database-scaling.png);
+  background-size:cover;
+}
+.cc-experience #backgroundregresion  {
+  background-image: url(2ac7a1e4375678db3c11cf7a2993e2a7-original.png);
+  background-size:cover;
+}
 
 /* Education Style */
 .cc-education .h5 {
