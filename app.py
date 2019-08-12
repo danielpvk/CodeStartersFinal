@@ -11,7 +11,7 @@ app = Flask(__name__)
 #************************
 # ***********************DATABASE LOCAL
 #************************
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://b6857a41f94299:e5e7015c@us-cdbr-iron-east-02.cleardb.net/heroku_f2c3a02bdbdbd96"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://b6857a41f94299:e5e7015c@us-cdbr-iron-east-02.cleardb.net/heroku_f2c3a02bdbdbd96"
 
 #************************
 # ***********************DATABASE HEROKU
